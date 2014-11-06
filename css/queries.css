@@ -24,4 +24,49 @@
   {
     padding: 0;
   }
+  .navbar-collapse
+  {
+    background: transparent;
+  }
+  .navbar-nav
+  {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav li
+  {
+    display: inline-block;
+  }
+  .navbar-left a
+  {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .navbar-brand
+  {
+    font-size: 2.5em;
+  }
+  .navbar-collapse
+  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .billboard
+  {
+    font-size: 5em;
+  }
+  .jumbotron
+  {
+    height: 88%;
+  }
+  .jumbotron p
+  {
+    font-size: 1.75em;
+  }
 }
