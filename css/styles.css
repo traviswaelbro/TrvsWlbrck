@@ -3,22 +3,19 @@ body
 {
   height: 100%;
   margin: 0;
-  overflow: hidden;
   padding: 0;
-}
-body
-{
-  background-image: url('../images/desk.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
 }
 @font-face {
   font-family: 'mission script';
   src: url('../fonts/Mission-Script.otf');
+}
+section
+{
+  padding: 10em 0;
+}
+.col-centered{
+float: none;
+margin: 0 auto;
 }
 .navbar-inverse
 {
@@ -57,31 +54,11 @@ body
 {
   width: 1em;
 }
-.jumbotron
+.me
 {
-  display: table;
-
-  width: 100%;
-  height: 92%;
-  margin: 0;
-  padding: 0;
-
-  table-layout: fixed;
-
-  background: transparent;
+  width: 25%;
 }
-.jumbotron .container
+.action
 {
-  display: table-cell;
-
-  text-align: center;
-  vertical-align: middle;
-}
-.billboard
-{
-  font-size: 7em;
-}
-.jumbotron p
-{
-  font-size: 2em;
+  padding: 5em 0;
 }
