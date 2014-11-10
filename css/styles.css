@@ -11,54 +11,126 @@ body
 }
 section
 {
-  padding: 10em 0;
+  height: 73em;
 }
 .col-centered{
 float: none;
 margin: 0 auto;
 }
-.navbar-inverse
-{
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0);
-}
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a
-{
-  color: #000;
-  transition: all 0.5s ease;
-}
-.navbar-inverse .navbar-brand:hover,
-.navbar-nav > li:hover
-{
-  background-color: #97a9ad;
-  transition: all 0.75s ease;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.navbar-brand
-{
-  font-family: 'mission script', cursive;
-  font-size: 3em;
 
-  padding: 20px;
-}
-.navbar-right {
-  display: inline-block;
-}
-.fa
-{
-  font-size: 1.5em;
-}
-.fa-fw
-{
-  width: 1em;
-}
-.me
-{
-  width: 25%;
-}
-.action
-{
-  padding: 5em 0;
-}
+/* --- Navigation -- */
+  .navbar-collapse.collapse
+  {
+    display: inline;
+  }
+  .navbar-inverse,.navbar-collapse
+  {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0);
+  }
+  .navbar-inverse .navbar-brand,
+  .navbar-inverse .navbar-nav > li > a
+  {
+    color: #000;
+    transition: all 0.5s ease;
+  }
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-nav > li:hover
+  {
+    background-color: #97a9ad;
+    transition: all 0.75s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .navbar-brand
+  {
+    font-family: 'mission script', cursive;
+    font-size: 3em;
+/*
+    padding: 20px;*/
+  }
+  .navbar-right {
+    display: inline-block;
+  }
+  .fa
+  {
+    font-size: 1.5em;
+  }
+  .fa-fw
+  {
+    width: 1em;
+  }
+  /* --- End Navigation -- */
+
+/* -- Top Content -- */
+  .top-content
+  {
+    background-color: #4799F4;
+    /*padding: 0;*/
+  }
+    .land
+    {
+      color: #fff;
+      padding: 27em 0 0 0;
+    }
+    /* -- End Top Content -- */
+
+/* -- Top Difference -- */
+  .difference
+  {
+    background-color: #FFEC52;
+    padding: 23em 0 25em 0;
+  }
+  /* -- End Difference -- */
+
+/* - Featured Work - */
+  .work
+  {
+    padding: 9em 0;
+  }
+    .display
+    {
+      overflow: auto;
+    }
+    .display img
+    {
+      width: 100%;
+    }
+    /* - End Featured Work - */
+
+/* --- About  Me --- */
+  .about
+  {
+    background-color: #97a9ad;
+    padding: 18em 0;
+  }
+    .me
+    {
+      width: 25%;
+    }
+    /* --- End About  Me --- */
+
+/*-  Call To Action -*/
+  .action
+  {
+    height: auto;
+    padding: 10em 0;
+  }
+    /*-  End Call To Action -*/
+
+/* ---- Contact ---- */
+  .contact
+  {
+    background: rgb(115,115,115);
+    background: rgba(115,115,115,0.4);
+    height: auto;
+    padding: 6em 0 5em 0;
+  }
+    /* ---- End Contact ---- */
+
+/* ---- Footer ---- */
+  footer
+  {
+    background-color: #666;
+  }
+  /* ---- End Footer ---- */
