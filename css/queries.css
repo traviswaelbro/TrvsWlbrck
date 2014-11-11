@@ -1,60 +1,63 @@
-@media only screen and (max-width: 1376px) {
+@media only screen and (max-width: 1380px) {
+
   /* -- Top Content -- */
     .top-content
-    {
+    {      
       padding: 0;
     }
       .land
       {
-        padding: 18em 0 18em 0;
+        padding: 18em 0 1em 0;
       }
     /* -- End Top Content -- */
+  
+  /* - Difference - */
+    .difference .container
+    {
+      padding: 10em 0;
+    }
+    /* - End Difference - */
 
   /* - Featured Work - */
     .work
-    {
-      padding: 2em 0;
+    { 
+      padding: 1em 0;
     }
+      .work h2
+      {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
     /* - End Featured Work - */
 
   /* --- About  Me --- */
     .about
     {
-      padding: 5em 0 8em;
+      padding: 3em 0;
     }
+      .about h3
+      {
+        padding: 0;
+      }
     /* --- End About  Me --- */
 
   /*-  Call To Action -*/
     .action
     {
-      padding: 3em 0;
+      padding: 2em 0;
     }
     /*-  End Call To Action -*/
 
   /* ---- Contact ---- */
     .contact
     {
-      padding: 6em 0;
+      padding: 1em 0;
     }
     /* ---- End Contact ---- */
 }
 
 @media only screen and (max-width: 766px) {
-  .collapsing,
-  .in
-  {
-    background-color: #97a9ad;
-  }
-  .collapsing ul li a,
-  .in ul li a
-  {
-    color: #333!important;
-  }
-  .collapsing ul li a:hover,
-  .in ul li a:hover
-  {
-    color: #f1f1f1!important;
-  }
+
   .container-fluid > .navbar-header,
   .container-fluid > .navbar-collapse
   {
@@ -87,10 +90,38 @@
   }
 }
 
-@media only screen and (max-width: 342px) {
-  .navbar-brand
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 365px) {
+  h1
+  {
+    font-size: 3em;
+  }
+  h3
   {
     font-size: 2.5em;
+  }
+  h4
+  {
+    font-size: 2em;
+  }
+  .navbar-fixed-top > .container
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container > .navbar-header, 
+  .container-fluid > .navbar-header, 
+  .container > .navbar-collapse, 
+  .container-fluid > .navbar-collapse
+  {
+    margin: 0;
+  }
+  .navbar-inverse .navbar-brand
+  {
+    font-size: 2.75em;
   }
   .navbar-collapse
   {
@@ -98,15 +129,68 @@
     padding: 0;
     width: 100%;
   }
-  .billboard
+  .navbar-inverse .navbar-nav > li > a
   {
-    font-size: 5em;
+    font-size: 1.2em;
   }
-  .jumbotron
+  .land
   {
-    height: 88%;
+    padding: 13em 0;
   }
-  .jumbotron p
+  .difference
+  {
+    height: 100%;
+  }
+  .difference .container
+  {
+    padding: 4em 0;
+  }
+  .work a h3
+  {
+    margin-top: 0.1em;
+  }
+  .about
+  {
+    padding: 1em 0;
+  }
+  .about img
+  {
+    width: 50%;
+  }
+  .list-inline li
+  {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .social a
+  {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .land
+  {
+    color: #444;
+    padding: 10em 0;
+  }
+  .difference
+  {
+    height: auto;
+  }
+  .difference .container
+  {
+    overflow: visible;
+    padding: 0;
+  }
+  #team
+  {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 255px) {
+  .navbar-inverse .navbar-brand
   {
     font-size: 1.75em;
   }
