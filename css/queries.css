@@ -5,29 +5,14 @@
     {      
       padding: 0;
     }
-      .land
-      {
-        padding: 18em 0 1em 0;
-      }
     /* -- End Top Content -- */
-  
-  /* - Difference - */
-    .difference .container
-    {
-      padding: 10em 0;
-    }
-    /* - End Difference - */
 
   /* - Featured Work - */
-    .work
-    { 
-      padding: 1em 0;
+    .work h2
+    {
+      margin-bottom: 0;
+      margin-top: 0;
     }
-      .work h2
-      {
-        margin-bottom: 0;
-        margin-top: 0;
-      }
     /* - End Featured Work - */
 
   /* --- About  Me --- */
@@ -38,6 +23,15 @@
       .about h3
       {
         padding: 0;
+      }
+      .me
+      {
+        min-width: 200px;
+        width: 15%;
+      }
+      .skills li, .slash
+      {
+        font-size: 2em;
       }
     /* --- End About  Me --- */
 
@@ -56,42 +50,43 @@
     /* ---- End Contact ---- */
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 768px) {
+  
+  .difference .container
+  {
 
-  .container-fluid > .navbar-header,
-  .container-fluid > .navbar-collapse
-  {
-    margin: 0;
   }
-  .navbar-inverse > .container,
-  .container-fluid
+  .list-inline li
   {
-    padding: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
-  .navbar-collapse
+  .about img
   {
-    background: transparent;
+    width: 50%;
   }
-  .navbar-nav
+  .slash
   {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
+    line-height: 0.75em;
   }
-  .navbar-nav li
+  .skills li
   {
-    display: inline-block;
+    line-height: 0.75;
+    padding-left: 0.05em;
+    padding-right: 0.05em;
   }
-  .navbar-left a
+  .skillstitle
   {
-    font-size: 1em;
+    line-height: 1.2;
   }
 }
 
 @media only screen and (max-width: 480px) {
-
+  .list-inline li
+  {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }
 
 @media only screen and (max-width: 365px) {
@@ -133,9 +128,9 @@
   {
     font-size: 1.2em;
   }
-  .land
+  .land h1
   {
-    padding: 13em 0;
+    font-size: 5em;
   }
   .difference
   {
@@ -143,7 +138,7 @@
   }
   .difference .container
   {
-    padding: 4em 0;
+
   }
   .work a h3
   {
@@ -152,15 +147,6 @@
   .about
   {
     padding: 1em 0;
-  }
-  .about img
-  {
-    width: 50%;
-  }
-  .list-inline li
-  {
-    padding-left: 1em;
-    padding-right: 1em;
   }
   .social a
   {
@@ -171,8 +157,8 @@
 @media only screen and (max-width: 325px) {
   .land
   {
-    color: #444;
-    padding: 10em 0;
+    color: #444;/*
+    padding: 10em 0;*/
   }
   .difference
   {
@@ -180,8 +166,7 @@
   }
   .difference .container
   {
-    overflow: visible;
-    padding: 0;
+
   }
   #team
   {
