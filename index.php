@@ -70,6 +70,7 @@
 		        <li><a href="https://www.linkedin.com/profile/view?id=379696521&trk=spm_pic" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a></li>
 		        <li><a href="mailto:twaelbroeck@gmail.com" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
 		      </ul>
+		      <i class="fa fa-fw fa-angle-down"></i>
 				</div>
 			</div>
 		</section>
