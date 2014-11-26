@@ -242,6 +242,10 @@ margin: 0 auto;
   {
     margin-top: -20px;
   }
+  .display h4
+  {
+    color: #4B7CA6;
+  }
   .display img
   {
     width: 100%;
