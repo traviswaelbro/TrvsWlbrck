@@ -1,3 +1,27 @@
+<?php
+  $myemail = "twaelbroeck@gmail.com";
+  $subject = "Form Submitted";
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $number = $_POST['number'];
+  $comments = $_POST['comments'];
+  $message  = <<<EMAIL
+
+Name:   $name
+Email:  $email
+
+Message:
+
+$comments
+
+EMAIL;
+
+if($_POST){
+  mail($myemail,$subject,$message);
+  $feedback = "Thanks for contacting us ! We'll be in touch soon.";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 	<head>
@@ -70,19 +94,18 @@
 		        <li><a href="https://www.linkedin.com/profile/view?id=379696521&trk=spm_pic" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a></li>
 		        <li><a href="mailto:twaelbroeck@gmail.com" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
 		      </ul>
-		      <i class="fa fa-fw fa-angle-down"></i>
 				</div>
 			</div>
 		</section>
 		<section class="difference" id="about">
 			<div class="container-fluid center">
 				<div class="container text-justify">
-					<h1 class="text-center">What makes us different?</h1>
+					<h1 class="text-center">What makes me different?</h1>
 					<div class="col-md-10 col-md-offset-1">
-						<h4>We're not going to give you the same cookie-cutter spiel and design as the other guys. We care about our customers - and we care about their customers.</h4>
-						<h4>We want to have a conversation with you.</h4>
-						<h4>Our goal is to learn what challenges you face and find every way to minimize or eliminate those challenges. We strive to learn your business inside and out. </h4>
-						<h4>With this understanding of how <em>your</em> business works, we can create a solution that works best for <em>you</em>.  </h4>
+						<h4>I'm not going to give you the same cookie-cutter spiel and design as the other guys. I care about my customers - and I care about their customers.</h4>
+						<h4>I want to have a conversation with you.</h4>
+						<h4>My goal is to learn what challenges you face and find every way to minimize or eliminate those challenges. I strive to learn your business inside and out. </h4>
+						<h4>With this understanding of how <em>your</em> business works, I can create a solution that works best for <em>you</em>.  </h4>
 					</div>
 				</div>
 			</div>
@@ -97,12 +120,13 @@
 					</a>
 					<p>Full service professional photography.</p>
 				</div>
-				<div class="display col-xs-12 col-md-5">
-					<a href="#" target="_blank">
+				<div class="display col-xs-12 col-md-5"><!--
+					<a href="#" target="_blank">-->
 						<img src="images/alerium.png" alt="Site Preview">
 						<h3>Alerium Productions</h3>
-					</a>
+<!--					</a>-->
 					<p>Custom audio tracks, music production, and recording.</p>
+					<h4>Link will be added when site goes live.</h4>
 				</div>
 			</div>
 		</section>
@@ -156,9 +180,9 @@
 				<div class="contact text-center container-fluid" id="contact">
 					<h1>Contact Us</h1>
 					<h4>Interested in working together or just want to say hi?</h4>
+					<h4 id="feedback"><?php echo $feedback; ?></h4>
 					<form role="form" action="#contact" method="POST" class="col-md-3 col-centered">
 						<div class="form-group">
-							<h3 id="feedback"></h3>
 							<input type="text" name="name" placeholder="Name (required)" class="form-control">	
 						</div>
 						<div class="form-group">
