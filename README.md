@@ -5,10 +5,9 @@ Personal Site Development
 
 This version is what I had hosted on my personal site, however not all features work while hosted on GitHub Pages due to the lack of PHP functionality. For example, the form will not send because PHP is not supported.
 
-=======
-TrvsWlbrck
-==========
+View the GitHub Pages hosted site here: http://travs-w.github.io/TrvsWlbrck/
 
+=======
 
 This is my own personal site, which will be used to showcase my work and allow clients (and other parties) to contact me. 
 

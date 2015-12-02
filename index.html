@@ -114,10 +114,10 @@ include ('testform.php');
 			<div class="container-fluid">
 				<h2>Featured Work</h2>
 				<div class="display col-xs-12 col-md-6 col-md-offset-3">
-					<a href="http://www.hannahwphotography.com" target="_blank">
+					<!-- <a href="http://www.hannahwphotography.com" target="_blank"> -->
 						<img src="img/hannah.png" alt="Site Preview">
 						<h3>Hannah W Photography</h3>
-					</a>
+					<!-- </a> -->
 					<p>Full service professional photography.</p>
 				</div>
 				<!--<div class="display col-xs-12 col-md-5">
@@ -170,7 +170,10 @@ include ('testform.php');
 						</div>
 						<div class="form-group">
 							<p class="feedback"><?php echo $commentsErr; ?></p>
-							<textarea name="comments" id="message" placeholder="Message..." cols="30" rows="10" class="form-control" ><?php if (isset($_POST['comments'])) echo $_POST['comments'];?></textarea>	
+							<textarea name="comments" id="message" placeholder="Message..." cols="30" rows="10" class="form-control" >
+								IMPORTANT: This form will not submit while hosted through GitHub Pages. Please email me directly at twaelbroeck.com or call me at 317-650-3893. Thanks! <br/>
+								<?php if (isset($_POST['comments'])) echo $_POST['comments'];?>
+							</textarea>	
 						</div>
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary">SEND</button>	
