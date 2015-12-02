@@ -1,0 +1,264 @@
+/*
+ *  General
+ */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width:100%;
+  }
+  a, li, p, h1, h3, textarea,input {
+    color: #fff;
+    font-family: "Lato","Open Sans", sans-serif;
+    font-weight: 300;
+  }
+  .fa {color: #384252;}
+  .fa-4 {font-size: 1.5em;}
+  section {
+    height: 100%;
+  }
+  input, textarea {
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: block;
+    font-size: 1em;
+    margin: 0.25em auto;
+    padding: 0.5em;
+    width: 250px;
+  }
+  .valign-parent {
+    display: table;
+  }
+  .valign-child {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .text-center {text-align: center;}
+  .hidden {display: none;}
+  .show {display: table}
+  /* End General */
+
+/*
+ *  Menu
+ */
+  .menu {
+    background-color: #fff;
+    left: 0;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    z-index: 100;
+  }
+  .navigation {
+    background-color: rgb(31,31,31);
+    background-color: rgba(31,31,31,0.9);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 25;
+  }
+  .navigation ul {
+    padding-left: 0;
+  }
+  .navigation a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .nav-choice {
+    list-style-type: none;
+    margin: 0.5em auto;
+    font-size: 2em;
+    width: 50%;
+  }
+  /* End Menu */
+
+/*
+ *  Main Content
+ */
+  .main {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+  .main .valign-parent {
+    background-color: rgb(51,51,51);
+    background-color: rgba(51,51,51,0.25);
+    height: 96%;
+    margin: 0;
+    padding: 1%;
+    width: 98%;
+  }
+  .content {
+    border: 1px solid #fff;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .content .title {
+    font-size: 5em;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .content .tagline {
+    font-size: 2em;
+  }
+  .btn-about {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+
+    font-size: 24px;
+    font-family: "Lato","Open Sans", sans-serif;
+    font-weight: 300;
+    
+    margin: 0 0.25em;
+    padding: 10px 0;
+    width: 220px;
+
+    background: #FFF;
+    border: 1px solid #FFF;
+    color: #384252;
+    display: inline-block;
+    overflow: hidden;
+    
+    transition: all 0.5s;
+  }
+  .btn-about:hover, .btn-about:active 
+  {
+    text-decoration: none;
+    color: #FFF;
+    border-color: #FFF;
+    background: transparent;
+  }
+ /* End main content */
+
+/*
+ *  About
+ */
+  .about-title {
+    font-size: 4em;
+    margin-bottom: 0.25em;
+    margin-top: 0;
+  }
+  .me {
+    border-radius: 160px;
+    width: 320px;
+  }
+  .about-me {
+    font-size: 1.5em;
+    margin: 1.5em auto;
+    text-align: justify;
+    width: 50%;
+  }
+  .skills-container {
+    margin-bottom: 1em;
+  }
+  .skills li {
+    display: inline-block;
+    padding: 0 1em;
+  }
+ /* End about */
+
+/*
+ *  Contact
+ */
+  .contact-title {
+    text-align: center;
+  }
+  .label-top {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.6);
+    height: 100%;
+    min-width: 111px;
+    padding: 0.1em 1em;
+    width: 25%;
+  }
+  .label-top h3 {
+    color: #384252;
+  }
+  .contact-card {
+    float: left;
+    margin-left: 10%;
+  }
+  .contact-card .label {
+    background-color: rgb(51,51,51);
+    background-color: rgba(51,51,51,0.5);
+    padding: 3em;
+    text-align: left;
+  }
+  .contact-form {
+    float: right;
+    margin-right: 10%;
+  }
+  .message-me-label {
+    margin-left: 68%;
+  }
+  .form-container {
+    background-color: rgb(51,51,51);
+    background-color: rgba(51,51,51,0.5);
+    padding: 80px 0;
+    width: 455px;
+  }
+  .form-container .btn-about {
+    margin: 1em auto 0.25em;
+  }
+  .form {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .social-buttons {
+    text-align: center;
+  }
+  .social {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.6);
+    display: inline-block;
+    margin: 0.5em 1em;
+    padding: 1em;
+    transition: 0.5s ease all;
+    width: 60px
+  }
+  .fa-facebook {
+    color: #4371D2;
+    transition: 0.25s ease all;
+  }
+  .social:hover .fa-facebook {
+    color: #2E4C8C;
+    transition: 0.25s ease all;
+  }
+  .fa-twitter {
+    color: #00aced;
+    transition: 0.25s ease all;
+  }
+  .social:hover .fa-twitter {
+    color: #018DC1;
+    transition: 0.25s ease all;
+  }
+ /* End contact */
+
+/*
+ *  Blog
+ */
+ .article {
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.6);
+  display: inline-block;
+  min-height: 250px;
+  list-style-type: none;
+  margin: 2em;
+  width: 40%;
+ }
+ /* End blog */
+
+ /*
+  * Transitions
+  */
+  .transition-1 {
+    -webkit-transition: 1s ease all;
+    -moz-transition:  1s ease all;
+    -o-transition: 1s ease all;
+    transition:  1s ease all;
+  }

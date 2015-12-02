@@ -1,25 +1,5 @@
-<?php
-  $myemail = "twaelbroeck@gmail.com";
-  $subject = "Form Submitted";
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $number = $_POST['number'];
-  $comments = $_POST['comments'];
-  $message  = <<<EMAIL
-
-Name:   $name
-Email:  $email
-
-Message:
-
-$comments
-
-EMAIL;
-
-if($_POST){
-  mail($myemail,$subject,$message);
-  $feedback = "Thanks for contacting us ! We'll be in touch soon.";
-}
+<?
+include ('testform.php');
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +10,7 @@ if($_POST){
 	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	  <meta property="og:type" content="website"/>
 	  <meta property="og:url" content="http://www.traviswaelbroeck.com"/>
-	  <meta property="og:image" content="http://www.traviswaelbroeck.com/images/preview.png" />
+	  <meta property="og:image" content="http://www.traviswaelbroeck.com/img/preview.png" />
 	  <meta property="og:title" content="Travis Waelbroeck"/>
 	  <meta property="og:site_name" content="Travis Waelbroeck"/>
 	  <title>Travis Waelbroeck</title>
@@ -40,7 +20,7 @@ if($_POST){
 	  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 	  <link href="css/queries.css" rel="stylesheet">
-	  <link rel="shortcut icon" type="image/x-icon" href="images/x-icon.ico" >
+	  <link rel="shortcut icon" type="image/x-icon" href="img/x-icon.ico" >
 	  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,8 +50,7 @@ if($_POST){
 							      <ul class="nav navbar-nav navbar-right scroll-link">
 							        <li><a href="#about">About</a></li>
 							        <li><a href="#work">Work</a></li>
-							        <li><a href="#team">Team</a></li>
-							        <!-- <li class="col-md-3"><a class="col-md-8 col-centered" href="#build">Build</a></li> -->
+							        <li><a href="#difference">Why Me?</a></li>
 							        <li><a href="#contact">Contact</a></li>
 							      </ul>
 							    </div><!-- /.navbar-collapse -->
@@ -81,7 +60,7 @@ if($_POST){
 					</div>
 				</header>
 			</div>
-		<section class="top-content text-center" id="top" style="background-image: url('images/mtn3.jpg');">
+		<section class="top-content text-center" id="top" style="background-image: url('img/mtn3.jpg');">
 			
 			<div class="container-fluid land">
 				<div class="container">
@@ -97,46 +76,12 @@ if($_POST){
 				</div>
 			</div>
 		</section>
-		<section class="difference" id="about">
-			<div class="container-fluid center">
-				<div class="container text-justify">
-					<h1 class="text-center">What makes me different?</h1>
-					<div class="col-md-10 col-md-offset-1">
-						<h4>I'm not going to give you the same cookie-cutter spiel and design as the other guys. I care about my customers - and I care about their customers.</h4>
-						<h4>I want to have a conversation with you.</h4>
-						<h4>My goal is to learn what challenges you face and find every way to minimize or eliminate those challenges. I strive to learn your business inside and out. </h4>
-						<h4>With this understanding of how <em>your</em> business works, I can create a solution that works best for <em>you</em>.  </h4>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="work text-center" id="work">
-			<div class="container-fluid">
-				<h2>Featured Work</h2>
-				<div class="display col-xs-12 col-md-5 col-md-offset-1">
-					<a href="http://www.hannahwphotography.com" target="_blank">
-						<img src="images/hannah.png" alt="Site Preview">
-						<h3>Hannah W Photography</h3>
-					</a>
-					<p>Full service professional photography.</p>
-				</div>
-				<div class="display col-xs-12 col-md-5"><!--
-					<a href="#" target="_blank">-->
-						<img src="images/alerium.png" alt="Site Preview">
-						<h3>Alerium Productions</h3>
-<!--					</a>-->
-					<p>Custom audio tracks, music production, and recording.</p>
-					<h4>Link will be added when site goes live.</h4>
-				</div>
-			</div>
-		</section>
-		<div class="clearfix"></div>
-		<section class="about text-center" id="team">
+		<section class="about text-center" id="about">
 			<div class="container-fluid">
 				<div class="container">
 					<h1>About Me!</h1>
-					<img src="images/travis-icon.jpg" alt="Travis!" class="img-circle me">
-					<h3 class="col-md-10 col-md-offset-1">I'm Travis, a computer geek based out of Indiana. I've studied both Computer Engineering and Software Development at Rose-Hulman and Ivy Tech. I love making things better, easier to use, and lots of fun. Big or small, I enjoy taking an idea and turning it into reality.</h3>
+					<img src="img/travis-icon.jpg" alt="Travis!" class="img-circle me">
+					<h3 class="col-md-10 col-md-offset-1">I'm Travis, a computer geek from Indiana. I've studied both Computer Engineering and Software Development at Rose-Hulman and Ivy Tech. I love making things better, easier to use, and lots of fun. Big or small, I enjoy taking an idea and turning it into reality.</h3>
 					<div class="clearfix"></div>
 					<div class="container">
 						<ul class="list-inline skills col-sm-10 col-md-8 col-centered">
@@ -146,7 +91,9 @@ if($_POST){
 							<li class="col-sm-2 col-xs-12">Javascript</li>
 							<li class="col-sm-1 col-xs-12">jQuery</li>
 							<li class="col-sm-1 col-xs-12">Git</li>
-							<li class="col-sm-4 col-xs-12">Responsive Web Design</li>
+							<li class="col-sm-1 col-xs-12">C++</li>
+							<li class="col-sm-1 col-xs-12">SQL</li>
+							<li class="col-sm-1 col-xs-12"></li>
 						</ul>
 					</div>
 					<div class="clearfix"></div>
@@ -163,12 +110,40 @@ if($_POST){
 			</div>
 		</section>
 		<div class="clearfix"></div>
-		<!--
-			<section class="showoff">
-				
-			</section>
-			
-		<div class="clearfix"></div>-->
+		<section class="work text-center" id="work">
+			<div class="container-fluid">
+				<h2>Featured Work</h2>
+				<div class="display col-xs-12 col-md-6 col-md-offset-3">
+					<a href="http://www.hannahwphotography.com" target="_blank">
+						<img src="img/hannah.png" alt="Site Preview">
+						<h3>Hannah W Photography</h3>
+					</a>
+					<p>Full service professional photography.</p>
+				</div>
+				<!--<div class="display col-xs-12 col-md-5">
+					<a href="#" target="_blank">
+						<img src="img/alerium.png" alt="Site Preview">
+						<h3>Alerium Productions</h3>
+					</a>
+					<p>Custom audio tracks, music production, and recording.</p>
+					<h4>Link will be added when site goes live.</h4>
+				</div>-->
+			</div>
+		</section>
+		<div class="clearfix"></div>
+		<section class="difference" id="difference">
+			<div class="container-fluid center">
+				<div class="container text-justify">
+					<h1 class="text-center">What makes me different?</h1>
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<h4>I'm passionate about my work and I like to think outside the box.</h4>
+						<h4>I'm not going to give you the same cookie-cutter spiel and design as the other guys.</h4>
+						<h4>My goal is to learn the inside and out of every challenge and find every way to minimize or eliminate it.</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="clearfix"></div>
 		<section class="bottom">
 			<div class="action-container">
 				<div class="action text-center container-fluid">
@@ -178,21 +153,24 @@ if($_POST){
 			<div class="clearfix"></div>
 			<div class="contact-container">
 				<div class="contact text-center container-fluid" id="contact">
-					<h1>Contact Us</h1>
+					<h1>Contact Me</h1>
 					<h4>Interested in working together or just want to say hi?</h4>
 					<h4 id="feedback"><?php echo $feedback; ?></h4>
 					<form role="form" action="#contact" method="POST" class="col-md-3 col-centered">
 						<div class="form-group">
-							<input type="text" name="name" placeholder="Name (required)" class="form-control">	
+							<input type="text" name="name"  placeholder="Name (required)" class="form-control" <?php if (isset($_POST['name'])) echo 'value="'.$_POST['name'].'"';?> >	
+							<p class="feedback"><?php echo $nameErr; ?></p>
 						</div>
 						<div class="form-group">
-							<input type="email" name="email" placeholder="Email" class="form-control">	
+							<input type="email" name="email" placeholder="Email" class="form-control" <?php if (isset($_POST['email'])) echo 'value="'.$_POST['email'].'"';?> >	
 						</div>
 						<div class="form-group">
-							<input type="tel" name="number" placeholder="Phone" class="form-control">	
+							<input type="tel" name="number" placeholder="Phone" class="form-control" <?php if (isset($_POST['number'])) echo 'value="'.$_POST['number'].'"';?> >	
+							<p class="feedback"><?php echo $numErr; ?></p>
 						</div>
 						<div class="form-group">
-							<textarea name="comments" id="message" placeholder="Message..." cols="30" rows="10" class="form-control"></textarea>	
+							<p class="feedback"><?php echo $commentsErr; ?></p>
+							<textarea name="comments" id="message" placeholder="Message..." cols="30" rows="10" class="form-control" ><?php if (isset($_POST['comments'])) echo $_POST['comments'];?></textarea>	
 						</div>
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary">SEND</button>	

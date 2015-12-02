@@ -1,0 +1,22 @@
+@media only screen and (max-width:720px) {
+	.menu {
+		height: 50px;
+		width: 50px;
+	}
+	.fa-4 {
+		font-size: 1.5em;
+	}
+	.content .title {
+		font-size: 3em;
+		max-width: 100%;
+	}
+	.content .tagline {
+		font-size: 1.25em;
+	}
+	.btn-about {
+    text-decoration: none;
+    color: #FFF;
+    border-color: #FFF;
+    background: transparent;
+  }
+}

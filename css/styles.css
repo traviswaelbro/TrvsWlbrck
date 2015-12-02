@@ -141,7 +141,7 @@ margin: 0 auto;
   {/*
     background-color: #24475F;
     padding: 0;*/
-    background-image: url('../images/mtn3.jpg');
+    background-image: url('../img/mtn3.jpg');
     background-size: cover;
     overflow-y: hidden;
   }
@@ -155,7 +155,7 @@ margin: 0 auto;
     .top-content,
     #about,
     #work,
-    #team,
+    #difference,
     .bottom
     {
       display: table;
@@ -170,7 +170,7 @@ margin: 0 auto;
     .land,
     #about .container-fluid,
     #work .container-fluid,
-    #team .container-fluid
+    #difference .container-fluid
     {
       display: table-cell;
       width: 100%;
@@ -225,7 +225,7 @@ margin: 0 auto;
 /* -- Top Difference -- */
   .difference
   {
-    background-color: #3E5F74;
+    background-color: #97a9ad;
   }
   .difference .container
   {
@@ -255,7 +255,8 @@ margin: 0 auto;
 /* --- About  Me --- */
   .about
   {
-    background-color: #97a9ad;
+    background-color: #3E5F74;
+    color: #fff;
   }
     .me
     {
@@ -297,7 +298,7 @@ margin: 0 auto;
     }
     .social a
     {
-      color: #444;
+      color: #ccc;
       font-size: 1.5em;
       transition: all 0.5s ease;
     }
@@ -307,7 +308,7 @@ margin: 0 auto;
     }
     .social li:hover a
     {
-      color: #ddd;
+      color: #fff;
     }
     .land .media li
     {
@@ -331,22 +332,27 @@ margin: 0 auto;
     }
     /* --- End About  Me --- */
 
-/*-  Call To Action -*/
-  .action
-  {
-
-  }
-    /*-  End Call To Action -*/
-
 /* ---- Contact ---- */
   .contact
   {
+    background-color: #3E5F74;
+    /*
     background: rgb(115,115,115);
     background: rgba(115,115,115,0.4);
+    */
     height: auto;
-
   }
-    /* ---- End Contact ---- */
+  .contact h1, .contact h4
+  {
+    color: #fff;
+  }
+  .contact .feedback
+  {
+    color: #fff;
+    font-size: 2em;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+/* ---- End Contact ---- */
 
 /* ---- Footer ---- */
   footer

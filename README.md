@@ -2,6 +2,9 @@ TrvsWlbrck
 ==========
 
 Personal Site Development
+
+This version is what I had hosted on my personal site, however not all features work while hosted on GitHub Pages due to the lack of PHP functionality. For example, the form will not send because PHP is not supported.
+
 =======
 TrvsWlbrck
 ==========
@@ -21,5 +24,3 @@ I am hoping to have the majority of the site content up and navigable by this po
 ### v1.0
 Initial full-featured site release. Planned to have a unified design with several animations that contribute to the usefulness of the site. It will have examples of completed customer sites, site templates, and customer reviews. 
 
-### To Do
--Add 'down arrows' to bottom of each section/top of final section with anchors to the proper section.
